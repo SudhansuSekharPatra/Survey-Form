@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Survey Form</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <main class="container">
+      <!-------Header------->
+      <header>
+         <h1 id="title">Survey On ARTIFICIAL INTELLIGENCE (AI)</h1>
+         <p id="description">Tell us what you think/know about 'Artificial Intelligence'</p>
+      </header>
+      <!-------Form------->
+      <form id="survey-form">
+         <!-------Name------->
+         <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-cntrl" placeholder="Enter your name" required>
+         </div>
+         <!-------Email------->
+         <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-cntrl" placeholder="Enter your Email" required>
+         </div>
+         <!-------Age------->
+         <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" class="form-cntrl" min="10" max="100" placeholder="Age"
+               required>
+         </div>
+         <!-------Gender------->
+         <div class="form-group">
+            <p>Gender</p>
+            <select id="dropdown" class="form-cntrl" name="gender" required>
+               <option disabled selected value>Select your gender</option>
+               <option value="female">Female</option>
+               <option value="male">Male</option>
+               <option value="preferNo">Prefer not to say</option>
+            </select>
+         </div>
+         <!-------Radio Buttons------->
+         <div class="form-group">
+            <p>Do you think AI can take over the world?</p>
+            <label class="option-cntrl">
+               <input type="radio" name="user-input" value="definitely" class="input-radio" checked>Definitely
+            </label>
+            <label class="option-cntrl">
+               <input type="radio" name="user-input" value="maybe" class="input-radio">Maybe
+            </label>
+            <label class="option-cntrl">
+               <input type="radio" name="user-input" value="not-sure" class="input-radio">Not sure
+            </label>
+         </div>
+         <!-------Checkboxes------->
+         <div class="form-group">
+            <p>Select all the devices that uses AI <span class="clue">(as per you)</span></p>
+            <label class="option-cntrl">
+               <input type="checkbox" name="devices" value="smartphones" class="input-checkbox">Smartphones
+            </label>
+            <label class="option-cntrl">
+               <input type="checkbox" name="devices" value="vaccum-cleaner" class="input-checkbox">Vaccum cleaner
+            </label>
+            <label class="option-cntrl">
+               <input type="checkbox" name="devices" value="computers" class="input-checkbox">Computers
+            </label>
+            <label class="option-cntrl">
+               <input type="checkbox" name="devices" value="tv" class="input-checkbox">Television
+            </label>
+            <label class="option-cntrl">
+               <input type="checkbox" name="devices" value="robots" class="input-checkbox">Robots
+            </label>
+            <label class="option-cntrl">
+               <input type="checkbox" name="devices" value="cars" class="input-checkbox">Cars
+            </label>
+         </div>
+         <!-------Textarea------->
+         <div class="form-group">
+            <p>What else do you think about AI?</p>
+            <textarea name="opinion" id="opinion" class="input-opinion" placeholder="Your answer here....."></textarea>
+         </div>
+         <!-------Submit Button------->
+         <div class="form-group submit-btn-special">
+            <button id="submit" class="submit-btn" type="submit">Submit</button>
+         </div>
+      </form>
+      <!-------Footer------->
+      <footer>
+         <p>Thank you for your valuable time</p>
+      </footer>
+   </main>
+</body>
+
+</html>
